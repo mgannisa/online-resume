@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.cdnfonts.com/css/reddit-sans");
+@import url("https://fonts.cdnfonts.com/css/opening-hours-sans");
+
+body {
+  font-family: "Reddit Sans", sans-serif;
+}
+:root {
+  --lilac-color: #d2afff;
+  --lilac-soft-color: #e6d7ff;
+}
+.text-bold {
+  font-weight: 600;
+}
+.skills .progress-bar {
+  background-color: var(--lilac-color) !important;
+}
+.skills .progress {
+  border-radius: 0 !important;
+}
+.slick-dots {
+  position: relative !important;
+  bottom: 0;
+  margin: 1rem 0 1.5rem;
+}
+.slick-dots li,
+.slick-dots li button {
+  width: 12px !important;
+  height: 12px !important;
+}
+.slick-dots li {
+  border: 1px solid var(--lilac-color);
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active {
+  background-color: var(--lilac-color);
+}
+.slick-arrow,
+.slick-dots li button:before {
+  display: none !important;
+}
+.accordion {
+  --bs-accordion-border-color: #ffffff;
+  --bs-accordion-border-radius: 0;
+}
+.accordion-button {
+  padding: 0;
+  background-color: transparent;
+}
+.accordion-button::after {
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-color);
+  background-color: transparent;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+.accordion-button:focus {
+  box-shadow: none;
+}
+.nav-tabs,
+.nav-tabs .nav-link,
+.nav-tabs .nav-link.active {
+  border: 0;
+  font-weight: 600;
+  position: relative;
+  z-index: 0;
+}
+.nav-tabs .nav-link.active:before {
+  content: "";
+  position: absolute;
+  background-color: var(--lilac-soft-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  border-radius: 50px !important;
+}
+.nav-tabs {
+  --bs-nav-tabs-link-active-color: var(--bs-dark);
+  --bs-nav-link-color: var(--bs-secondary);
+  --bs-nav-link-hover-color: var(--bs-dark);
+}
+.navbar-toggler {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 9;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
