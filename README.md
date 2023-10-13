@@ -54,4 +54,4 @@ yarn start
   ![MegaAnnisa_Design_Flow_Mobile](https://github.com/mgannisa/online-resume/assets/6802291/b2a9592c-ea2a-4336-9964-073d4cd7ff32)
   
 - **Desktop**
-![MegaAnnisa_Design_Flow_Desktop](https://github.com/mgannisa/online-resume/assets/6802291/00a37883-f97f-4bc9-a20b-7e81aa5516be)
+  ![MegaAnnisa_Design_Flow_Desktop](https://github.com/mgannisa/online-resume/assets/6802291/00a37883-f97f-4bc9-a20b-7e81aa5516be)
