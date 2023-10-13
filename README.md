@@ -4,7 +4,7 @@ The Online Resume Website Application aims to transform a curriculum vitae (CV) 
 
 ## Table of Contents
 
-- [Project Name](#project-name)
+- [Online Resume](#online-resume)
   - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Demo](#demo)
