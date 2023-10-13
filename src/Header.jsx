@@ -7,7 +7,7 @@ function Header({ routes }) {
       style={{
         backgroundImage:
           'url("https://img.freepik.com/free-vector/gradient-grainy-texture_23-2148987745.jpg?w=740&t=st=1696662338~exp=1696662938~hmac=441adc1438f4af0f886c42812dfa0078132fab878ec49d70f15d41d72b14d562")',
-        backgroundSize: "cover"
+        backgroundSize: "cover",
       }}
     >
       <Container className="py-5" style={{ maxWidth: 960 }}>
@@ -15,7 +15,7 @@ function Header({ routes }) {
           src="https://i.ibb.co/1zB4NF6/E2-A667-C5-A7-E5-4962-9882-26-CE779-BD58-B.png"
           roundedCircle
           width={84}
-          style={{ backgroundColor: "#FFFFFF" }}
+          style={{ backgroundColor: "var(--white-color)" }}
           className="mb-3"
         />
         <h2 className="mb-2">
@@ -32,13 +32,13 @@ function Header({ routes }) {
               "I'm Software Engineer User Interface",
               1000,
               "I'm CSS Specialist",
-              1000
+              1000,
             ]}
             wrapper="em"
             speed={10}
             style={{
               display: "inline-block",
-              background: "#FFFFFF"
+              background: "var(--white-color)",
             }}
             repeat={Infinity}
           />

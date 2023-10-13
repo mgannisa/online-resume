@@ -10,27 +10,26 @@ const iconStyle = {
   justifyContent: "center",
   width: 44,
   height: 44,
-  background: "#d2afff",
+  background: "var(--lilac-color)",
   borderRadius: "50%",
-  border: "1px solid #d2afff"
+  border: "1px solid var(--lilac-color)",
 };
 
 const cardStyle = {
-  backgroundColor: "#E6D7FF",
+  backgroundColor: "var(--lilac-soft-color)",
   border: 0,
-  boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-  borderRadius: 25
+  boxShadow: "var(--box-shadow)",
+  borderRadius: 25,
 };
 
 function Contact() {
   useEffect(() => {
-    mapboxgl.accessToken =
-      "pk.eyJ1Ijoic2FoaWx0aGFrYXJlNTIxIiwiYSI6ImNrbjVvMTkzNDA2MXQydnM2OHJ6aHJvbXEifQ.z5aEqRBTtDMWoxVzf3aGsg";
+    mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
     const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/streets-v11",
       center: [106.7899, -6.5946],
-      zoom: 12
+      zoom: 12,
     });
     return () => map.remove();
   }, []);
@@ -39,14 +38,14 @@ function Contact() {
     name: "",
     sender: "",
     subject: "",
-    body: ""
+    body: "",
   });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -84,7 +83,7 @@ function Contact() {
                   <div style={iconStyle}>
                     <FontAwesomeIcon
                       icon={info.icon}
-                      style={{ color: "#FFFFFF" }}
+                      style={{ color: "var(--white-color)" }}
                     />
                   </div>
                   <Stack xs={9}>
@@ -158,9 +157,9 @@ function Contact() {
                     variant="light"
                     className="text-bold"
                     style={{
-                      backgroundColor: "#D2AFFF",
-                      borderColor: "#D2AFFF",
-                      borderRadius: 50
+                      backgroundColor: "var(--lilac-color)",
+                      borderColor: "var(--lilac-color)",
+                      borderRadius: 50,
                     }}
                   >
                     Send Message

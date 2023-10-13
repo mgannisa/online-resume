@@ -62,7 +62,7 @@ function Skills() {
           style={{
             borderRadius: 25,
             border: 0,
-            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            boxShadow: "var(--box-shadow)",
           }}
         >
           <Card.Body className="p-4">

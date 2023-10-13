@@ -5,27 +5,15 @@ import { uid } from "uid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faEdit } from "@fortawesome/free-solid-svg-icons";
 import { Element, scroller } from "react-scroll";
+import { commentsData } from "./data";
 
 function Comments() {
-  const [comments, setComments] = useState([
-    {
-      commentId: 0,
-      name: "Andre",
-      comment: `Mega is an exceptional Front-End. Her attention to detail and commitment to delivering top-notch user experiences is truly remarkable. She consistently transformed our design concepts into visually stunning and highly functional websites.`,
-      isEnableEdit: false
-    },
-    {
-      commentId: 1,
-      name: "Nada",
-      comment: `Working with Mega has been a game-changer for our web projects. Mega's dedication to producing clean code and her ability to solve complex design challenges make her an invaluable asset to any development team.`,
-      isEnableEdit: false
-    }
-  ]);
+  const [comments, setComments] = useState(commentsData);
 
   const [formData, setFormData] = useState({
     name: "",
     comments: "",
-    isEnableEdit: false
+    isEnableEdit: false,
   });
   const [isUpdate, setIsUpdate] = useState({ id: null, status: false });
 
@@ -47,7 +35,7 @@ function Comments() {
                 ...comment,
                 name: formData.name,
                 comment: formData.comment,
-                isEnableEdit: true
+                isEnableEdit: true,
               }
             : comment
         )
@@ -57,8 +45,8 @@ function Comments() {
             commentId: uid(),
             name: formData.name,
             comment: formData.comment,
-            isEnableEdit: true
-          }
+            isEnableEdit: true,
+          },
         ];
 
     setComments(updatedComments);
@@ -72,7 +60,7 @@ function Comments() {
     setFormData({
       name: foundData.name,
       comment: foundData.comment,
-      isEnableEdit: true
+      isEnableEdit: true,
     });
     setIsUpdate({ id, status: true });
   };
@@ -86,7 +74,7 @@ function Comments() {
   const scrollToTop = () => {
     scroller.scrollTo("topElement", {
       duration: 300,
-      delay: 0
+      delay: 0,
     });
   };
 
@@ -99,7 +87,7 @@ function Comments() {
           style={{
             border: 0,
             borderRadius: 25,
-            boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+            boxShadow: "var(--box-shadow)",
           }}
         >
           <Card.Body className="p-0">
@@ -135,9 +123,9 @@ function Comments() {
                   variant="light"
                   className="text-bold"
                   style={{
-                    backgroundColor: "#d2afff",
-                    borderColor: "#d2afff",
-                    borderRadius: 50
+                    backgroundColor: "var(--lilac-color)",
+                    borderColor: "var(--lilac-color)",
+                    borderRadius: 50,
                   }}
                 >
                   Send Comment
@@ -146,7 +134,7 @@ function Comments() {
             </Form>
             <h6
               className="p-4 text-bold"
-              style={{ borderTop: "1px solid #dee2e6" }}
+              style={{ borderTop: "1px solid var(--grey-light-color)" }}
             >
               Comments
             </h6>
@@ -154,9 +142,9 @@ function Comments() {
               <div
                 key={index}
                 style={{
-                  backgroundColor: index % 2 === 1 && "#E6D7FF",
+                  backgroundColor: index % 2 === 1 && "var(--lilac-soft-color)",
                   borderBottomLeftRadius: index === comments.length - 1 && 25,
-                  borderBottomRightRadius: index === comments.length - 1 && 25
+                  borderBottomRightRadius: index === comments.length - 1 && 25,
                 }}
                 className="px-4 py-3"
               >
@@ -167,7 +155,10 @@ function Comments() {
                     width={54}
                     style={{
                       alignSelf: "flex-start",
-                      backgroundColor: index % 2 === 1 ? "#FFFFFF" : "#E6D7FF"
+                      backgroundColor:
+                        index % 2 === 1
+                          ? "var(--white-color)"
+                          : "var(--lilac-soft-color)",
                     }}
                   />
                   <Stack>
@@ -180,7 +171,7 @@ function Comments() {
                     <Link
                       onClick={() => handleEdit(comment.commentId)}
                       className="px-1 ms-auto"
-                      style={{ color: "#d2afff" }}
+                      style={{ color: "var(--lilac-color)" }}
                     >
                       <small>
                         <FontAwesomeIcon icon={faEdit} className="mx-1" />
@@ -189,7 +180,7 @@ function Comments() {
                     </Link>
                     <Link
                       onClick={() => handleDelete(comment.commentId)}
-                      style={{ color: "#d2afff" }}
+                      style={{ color: "var(--lilac-color)" }}
                     >
                       <small>
                         <FontAwesomeIcon icon={faTrash} className="mx-1" />

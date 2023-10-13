@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div
       className="d-none d-sm-block"
-      style={{ borderTop: "1px solid #dee2e6" }}
+      style={{ borderTop: "1px solid var(--grey-light-color)" }}
     >
       <Container fluid className="py-3" style={{ maxWidth: 960 }}>
         <Stack direction="horizontal" gap={2}>
@@ -18,14 +18,14 @@ function Footer() {
               to={social.to}
               style={{
                 fontSize: "18px",
-                background: "#d2afff",
+                background: "var(--lilac-color)",
                 lineHeight: 1,
                 padding: "8px 0",
                 borderRadius: "50%",
                 textAlign: "center",
                 width: 36,
                 height: 36,
-                transition: "0.3s"
+                transition: "0.3s",
               }}
               target="_blank"
               rel="noopener noreferrer"
@@ -33,7 +33,7 @@ function Footer() {
             >
               <FontAwesomeIcon
                 icon={social.icon}
-                style={{ color: "#FFFFFF" }}
+                style={{ color: "var(--white-color)" }}
               />
             </Link>
           ))}

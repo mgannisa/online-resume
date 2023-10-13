@@ -18,9 +18,9 @@ const About = () => {
             src="https://i.ibb.co/1zB4NF6/E2-A667-C5-A7-E5-4962-9882-26-CE779-BD58-B.png"
             style={{
               width: "100%",
-              backgroundColor: "#E6D7FF",
+              backgroundColor: "var(--lilac-soft-color)",
               borderRadius: 50,
-              boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"
+              boxShadow: "var(--box-shadow)",
             }}
             className="mb-4"
           />
@@ -41,7 +41,7 @@ const About = () => {
                 <Stack key={index} direction="horizontal" gap={2}>
                   <FontAwesomeIcon
                     icon={faChevronRight}
-                    style={{ color: "#D2AFFF" }}
+                    style={{ color: "var(--lilac-color)" }}
                   />
                   <span className="text-bold">{info.title}: </span>
                   {info.value}
@@ -53,7 +53,7 @@ const About = () => {
                 <Stack key={index} direction="horizontal" gap={2}>
                   <FontAwesomeIcon
                     icon={faChevronRight}
-                    style={{ color: "#D2AFFF" }}
+                    style={{ color: "var(--lilac-color)" }}
                   />
                   <span className="text-bold">{info.title}: </span>
                   {info.value}

@@ -4,8 +4,8 @@ import { educationData, experienceData } from "./data";
 const resumeItemStyle = {
   paddingLeft: "1rem",
   marginTop: -2,
-  borderLeft: "2px solid #d2afff",
-  position: "relative"
+  borderLeft: "2px solid var(--lilac-color)",
+  position: "relative",
 };
 const resumeItemBefore = {
   content: "",
@@ -15,15 +15,15 @@ const resumeItemBefore = {
   borderRadius: 50,
   left: -9,
   top: 0,
-  background: "#ffffff",
-  border: "2px solid #d2afff"
+  background: "var(--white-color)",
+  border: "2px solid var(--lilac-color)",
 };
 const highlightText = {
-  background: "#e6d7ff",
+  background: "var(--lilac-soft-color)",
   padding: "5px 15px",
   width: "fit-content",
   fontWeight: 600,
-  marginBottom: 10
+  marginBottom: 10,
 };
 function Resume() {
   return (
@@ -102,7 +102,7 @@ function Resume() {
                     <h6 style={highlightText}>{val.year}</h6>
                     <p
                       className={
-                        index === educationData.length - 1 ? "mb-0" : ""
+                        index === experienceData.length - 1 ? "mb-0" : ""
                       }
                     >
                       <em>{val.subtitle}</em>

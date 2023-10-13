@@ -11,24 +11,24 @@ import { testimonials } from "./data";
 const testimonialItemStyle = {
   fontStyle: "italic",
   margin: "0 15px 15px 15px",
-  background: "#E6D7FF",
+  background: "var(--lilac-soft-color)",
   position: "relative",
   marginBottom: 35,
   borderRadius: 25,
   boxShadow: "0px 2px 15px rgba(0, 0, 0, 0.1)",
-  border: 0
+  border: 0,
 };
 
 const testimonialItemAfter = {
   content: "",
   width: 0,
   height: 0,
-  borderTop: "20px solid #E6D7FF",
+  borderTop: "20px solid var(--lilac-soft-color)",
   borderRight: "20px solid transparent",
   borderLeft: "20px solid transparent",
   position: "absolute",
   bottom: -20,
-  left: "calc(50% - 20px)"
+  left: "calc(50% - 20px)",
 };
 function Testimonial({ testimonial }) {
   const [truncate, setToggleTruncate] = useState(true);
@@ -41,7 +41,7 @@ function Testimonial({ testimonial }) {
     WebkitBoxOrient: "vertical",
     WebkitLineClamp: 5,
     overflow: "hidden",
-    textOverflow: "ellipsis"
+    textOverflow: "ellipsis",
   };
 
   return (
@@ -52,7 +52,7 @@ function Testimonial({ testimonial }) {
           <Stack direction="horizontal" gap={2}>
             <FontAwesomeIcon
               icon={faQuoteLeft}
-              style={{ alignSelf: "flex-start", color: "#D2AFFF" }}
+              style={{ alignSelf: "flex-start", color: "var(--lilac-color)" }}
               className="h4"
             />
             <p
@@ -64,7 +64,7 @@ function Testimonial({ testimonial }) {
             </p>
             <FontAwesomeIcon
               icon={faQuoteRight}
-              style={{ alignSelf: "flex-end", color: "#D2AFFF" }}
+              style={{ alignSelf: "flex-end", color: "var(--lilac-color)" }}
               className="h4 mb-0"
             />
           </Stack>
@@ -74,7 +74,7 @@ function Testimonial({ testimonial }) {
         src="https://i.ibb.co/JmqJgry/9-E07-EA27-3-AAA-49-D2-8-BE3-EFB5-EF9-D61-DE.png"
         roundedCircle
         width={90}
-        style={{ backgroundColor: "#dee2e6" }}
+        style={{ backgroundColor: "var(--grey-light-color)" }}
         className="my-3 mx-auto"
       />
       <h5>{testimonial.name}</h5>
@@ -95,17 +95,17 @@ function Testimonials() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>

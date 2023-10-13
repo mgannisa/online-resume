@@ -3,12 +3,12 @@ import {
   faInstagram,
   faTwitter,
   faTelegram,
-  faWhatsapp
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faLocationDot,
   faEnvelope,
-  faMobileScreen
+  faMobileScreen,
 } from "@fortawesome/free-solid-svg-icons";
 
 const socialMediaData = [
@@ -18,8 +18,8 @@ const socialMediaData = [
   { to: "https://t.me/mgannisa", icon: faTelegram },
   {
     to: "https://api.whatsapp.com/send?phone=6285718351194",
-    icon: faWhatsapp
-  }
+    icon: faWhatsapp,
+  },
 ];
 
 const infos = [
@@ -28,17 +28,17 @@ const infos = [
   { title: "City", value: "Bogor, ID" },
   { title: "Age", value: "29" },
   { title: "Degree", value: "Bachelor of CS" },
-  { title: "Email", value: "annisamga@gmail.com" }
+  { title: "Email", value: "annisamga@gmail.com" },
 ];
 
 const contactInfo = [
   {
     label: "Location",
     val: "Bogor, West Java, ID 16310",
-    icon: faLocationDot
+    icon: faLocationDot,
   },
   { label: "Email", val: "annisamga@gmail.com", icon: faEnvelope },
-  { label: "Call", val: "+62 857 1835 1194", icon: faMobileScreen }
+  { label: "Call", val: "+62 857 1835 1194", icon: faMobileScreen },
 ];
 
 const skillsData = [
@@ -47,7 +47,7 @@ const skillsData = [
   { label: "Vue.js", percentage: 92 },
   { label: "CSS", percentage: 100 },
   { label: "JavaScript", percentage: 90 },
-  { label: "ES6", percentage: 75 }
+  { label: "ES6", percentage: 75 },
 ];
 
 const swotData = [
@@ -74,7 +74,7 @@ const swotData = [
           field.
         </li>
       </ul>
-    )
+    ),
   },
   {
     eventKey: 1,
@@ -85,7 +85,7 @@ const swotData = [
         weaknesses is that I sometimes struggle with being a good listener,
         which can result in misunderstandings or missed information.
       </p>
-    )
+    ),
   },
   {
     eventKey: 2,
@@ -98,7 +98,7 @@ const swotData = [
         projects. This practice not only compensates for my listening challenges
         but also enhances my ability to retain and recall important information.
       </p>
-    )
+    ),
   },
   {
     eventKey: 3,
@@ -110,31 +110,31 @@ const swotData = [
         systematic note-taking approach helps mitigate this threat, ensuring
         that I have a comprehensive record of key points and discussions.
       </p>
-    )
-  }
+    ),
+  },
 ];
 
 const testimonials = [
   {
     name: "Andre",
     title: "Software Engineer Back End",
-    testimonial: `Mega is an outstanding Front-End expert, known for her remarkable attention to detail and dedication to crafting exceptional user experiences. She consistently translates design concepts into visually stunning, functional websites. I highly recommend Mega for front-end development projects.`
+    testimonial: `Mega is an outstanding Front-End expert, known for her remarkable attention to detail and dedication to crafting exceptional user experiences. She consistently translates design concepts into visually stunning, functional websites. I highly recommend Mega for front-end development projects.`,
   },
   {
     name: "Nada",
     title: "Product Manager",
-    testimonial: `Collaborating with Mega has transformed our web projects. Her mastery of HTML, CSS, and JavaScript shines in her responsive websites. Mega's commitment to clean code and tackling intricate design issues is invaluable to any team.`
+    testimonial: `Collaborating with Mega has transformed our web projects. Her mastery of HTML, CSS, and JavaScript shines in her responsive websites. Mega's commitment to clean code and tackling intricate design issues is invaluable to any team.`,
   },
   {
     name: "Faisal",
     title: "Software Engineer Front End",
-    testimonial: `Collaborating with Mega on various projects has been a pleasure. Her front-end skills are exceptional, spanning various web technologies, and she possesses a keen eye for design aesthetics. Mega consistently enhances our project quality.`
+    testimonial: `Collaborating with Mega on various projects has been a pleasure. Her front-end skills are exceptional, spanning various web technologies, and she possesses a keen eye for design aesthetics. Mega consistently enhances our project quality.`,
   },
   {
     name: "Annas",
     title: "Engineering Manager",
-    testimonial: `Mega, an exceptional Front-End Developer, infuses creativity into her work. She meets deadlines and surpasses client expectations, reflecting her professionalism. Mega's contributions elevate our team's capacity to deliver outstanding web solutions.`
-  }
+    testimonial: `Mega, an exceptional Front-End Developer, infuses creativity into her work. She meets deadlines and surpasses client expectations, reflecting her professionalism. Mega's contributions elevate our team's capacity to deliver outstanding web solutions.`,
+  },
 ];
 
 const educationData = [
@@ -162,7 +162,7 @@ const educationData = [
           Engineer and User Interface & Front-End Developer.
         </p>
       </>
-    )
+    ),
   },
   {
     title: "HIGH SCHOOL ACCELERATION PROGRAM",
@@ -178,8 +178,8 @@ const educationData = [
         instrumental in shaping my academic foundation and fostering my
         commitment to personal growth.
       </p>
-    )
-  }
+    ),
+  },
 ];
 const experienceData = [
   {
@@ -222,7 +222,7 @@ const experienceData = [
           results.
         </li>
       </ul>
-    )
+    ),
   },
   {
     title: "SOFTWARE ENGINEER USER INTERFACE",
@@ -243,7 +243,7 @@ const experienceData = [
           meetings and projects.
         </li>
       </ul>
-    )
+    ),
   },
   {
     title: "FRONT END DEVELOPER",
@@ -254,7 +254,7 @@ const experienceData = [
         At Travorama, I played a pivotal role in shaping the digital travel
         experience, working on hotel and flight ticketing.
       </p>
-    )
+    ),
   },
   {
     title: "CSS ENGINEER",
@@ -265,9 +265,25 @@ const experienceData = [
         At Reebonz, a luxury fashion e-commerce platform, I enhanced the user
         interface using CSS.
       </p>
-    )
-  }
+    ),
+  },
 ];
+
+const commentsData = [
+  {
+    commentId: 0,
+    name: "Andre",
+    comment: `Mega is an exceptional Front-End. Her attention to detail and commitment to delivering top-notch user experiences is truly remarkable. She consistently transformed our design concepts into visually stunning and highly functional websites.`,
+    isEnableEdit: false,
+  },
+  {
+    commentId: 1,
+    name: "Nada",
+    comment: `Working with Mega has been a game-changer for our web projects. Mega's dedication to producing clean code and her ability to solve complex design challenges make her an invaluable asset to any development team.`,
+    isEnableEdit: false,
+  },
+];
+
 export {
   socialMediaData,
   infos,
@@ -276,5 +292,6 @@ export {
   swotData,
   testimonials,
   educationData,
-  experienceData
+  experienceData,
+  commentsData,
 };

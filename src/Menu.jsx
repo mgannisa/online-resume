@@ -9,7 +9,7 @@ function Menu({ routes }) {
     position: "relative",
     padding: "0 1rem",
     fontWeight: 600,
-    zIndex: 1
+    zIndex: 1,
   };
   function navBeforeStyle(route) {
     if (location.pathname === route) {
@@ -21,8 +21,8 @@ function Menu({ routes }) {
         borderRadius: 50,
         left: 0,
         top: 0,
-        background: "#e6d7ff",
-        zIndex: -1
+        background: "var(--lilac-soft-color)",
+        zIndex: -1,
       };
     }
   }
@@ -56,7 +56,7 @@ function Menu({ routes }) {
                 src="https://i.ibb.co/T4nM1Qd/F55-E6-CCE-C6-AF-4599-8137-B76-BB1-FFCDB5.png"
                 roundedCircle
                 width={74}
-                style={{ backgroundColor: "#E6D7FF" }}
+                style={{ backgroundColor: "var(--lilac-soft-color)" }}
                 className="mt-3"
               />
               <h5 className="my-3 text-bold">Let's connect:</h5>
@@ -66,14 +66,14 @@ function Menu({ routes }) {
                   style={{
                     fontSize: "18px",
                     display: "inline-block",
-                    background: "#d2afff",
+                    background: "var(--lilac-color)",
                     lineHeight: 1,
                     padding: "8px 0",
                     borderRadius: "50%",
                     textAlign: "center",
                     width: 36,
                     height: 36,
-                    transition: "0.3s"
+                    transition: "0.3s",
                   }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -82,13 +82,15 @@ function Menu({ routes }) {
                 >
                   <FontAwesomeIcon
                     icon={social.icon}
-                    style={{ color: "#FFFFFF" }}
+                    style={{ color: "var(--white-color)" }}
                   />
                 </Link>
               ))}
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body style={{ borderBottom: "1px solid #dee2e6" }}>
+          <Offcanvas.Body
+            style={{ borderBottom: "1px solid var(--grey-light-color)" }}
+          >
             <Nav className="justify-content-center flex-grow-1 my-4">
               {routes.map((route, index) => (
                 <Nav.Link

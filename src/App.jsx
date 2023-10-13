@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
   Outlet,
-  useLocation
+  useLocation,
 } from "react-router-dom";
 import Header from "./Header";
 import About from "./About";
@@ -22,28 +22,28 @@ const routes = [
   {
     path: "/",
     name: "About",
-    element: <About />
+    element: <About />,
   },
   {
     path: "/resume",
     name: "Resume",
-    element: <Resume />
+    element: <Resume />,
   },
   {
     path: "/skills",
     name: "Skills",
-    element: <Skills />
+    element: <Skills />,
   },
   {
     path: "/testimonials",
     name: "Testimonials",
-    element: <Testimonials />
+    element: <Testimonials />,
   },
   {
     path: "/contact",
     name: "Contact",
-    element: <Contact />
-  }
+    element: <Contact />,
+  },
 ];
 const AnimationLayout = () => {
   const { pathname } = useLocation();
